@@ -1,0 +1,50 @@
+import courses from "../data/courses"
+import { Link, useLocation, useNavigate } from "react-router-dom"
+import queryString from 'query-string'
+import { useEffect, useState } from "react"
+
+const SORT_KEYS = ['title', 'slug', 'id']
+
+function sortCourses(courses, key){
+  const sortedCourses = [...courses]
+  if (!key || !SORT_KEYS.includes(key)){
+    return sortedCourses
+  }
+  sortedCourses.sort((a, b) => a[key] > b[key] ? 1 : -1)
+  return sortedCourses
+}
+
+function Courses() {
+  const location = useLocation()
+  const query = queryString.parse(location.search)
+  const navigate = useNavigate ()
+  const [sortKey, setSortkey] = useState(query.sort)
+  const [sort, setSort] = useState (sortCourses(courses, sortKey))
+ useEffect(()=>{
+  if (!SORT_KEYS.includes(sortKey)) {
+    navigate('.')
+    setSortkey(undefined)
+    setSort([...courses])
+  }
+}, [sortKey, navigate])
+  
+
+  return (
+    <>
+    <h1>{sortKey ? `Corses sorted by ${sortKey}` : 'Corses'}</h1>
+  
+    {sort.map((course)=>(
+      <div key={course.id}>
+    <Link to={course.slug} className="courseLink">
+      {course.title}
+      </Link>
+      </div>
+    ))}
+ 
+    
+    </>
+  
+  )
+}
+
+export default Courses

@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    position: relative;
+    min-width: 320px;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+ul {
+  visibility: visible; 
+  animation-duration: 1.5s; 
+  animation-name: fadeInRight;
+}
+
+
+
