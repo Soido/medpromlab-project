@@ -1,22 +1,22 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import React, { useRef } from "react";
-import { useScroll } from "react-use";
-import "./App.css";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import React, { useRef } from 'react';
+import { useScroll } from 'react-use';
+import './App.css';
 
-import Home from "./components/Home";
-import Implants from "./components/Implants";
-import FillingMaterial from "./components/FillingMaterial";
-import DentalCare from "./components/DentalCare";
-import Surgicalinstruments from "./components/Surgicalinstruments";
-import Rehabilitation from "./components/Rehabilitation";
-import Diagnosticequipment from "./components/Diagnosticequipment";
-import Socialsignificance from "./components/Socialsignificance";
-import Forpartners from "./components/Forpartners";
-import Contacts from "./components/Contacts";
-import NotFound from "./components/NotFound";
-import MainLayout from "./Layouts/MainLayout";
-import Courses from "./components/Courses";
-import Singlecourse from "./components/Singlecourse";
+import Home from './components/Home';
+import Implants from './components/Implants';
+import FillingMaterial from './components/FillingMaterial';
+import DentalCare from './components/DentalCare';
+import Surgicalinstruments from './components/Surgicalinstruments';
+import Rehabilitation from './components/Rehabilitation';
+import Diagnosticequipment from './components/Diagnosticequipment';
+import Socialsignificance from './components/Socialsignificance';
+import Forpartners from './components/Forpartners';
+import Contacts from './components/Contacts';
+import NotFound from './components/NotFound';
+import MainLayout from './Layouts/MainLayout';
+import Courses from './components/Courses';
+import Singlecourse from './components/Singlecourse';
 
 function App() {
   const scrollRef = React.useRef(null);
@@ -25,10 +25,13 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <div className="App" ref={scrollRef}>
+        <div ref={scrollRef} className="App h-screen overflow-auto">
           <Routes>
-            <Route path="/" element={<MainLayout />}>
-              <Route index={true} /*можно без true */ element={<Home />} />
+            <Route path="/" element={<MainLayout yScroll={y} />}>
+              <Route
+                index={true}
+                /*можно без true */ element={<Home yScroll={y} />}
+              />
               <Route path="implants" element={<Implants />} />
               <Route path="fillingmaterial" element={<FillingMaterial />} />
               <Route path="dentalcare" element={<DentalCare />} />

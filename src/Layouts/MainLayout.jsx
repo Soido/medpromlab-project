@@ -1,16 +1,18 @@
-import { Outlet } from "react-router-dom";
-import { useRef } from "react";
-import { useScroll } from "react-use";
-import Menu from "../components/Menu";
+import { Outlet } from 'react-router-dom';
+import Menu from '../components/Menu';
+import { useWindowSize } from 'react-use';
 
-function MainLayout() {
+function MainLayout({ yScroll }) {
+  const { height } = useWindowSize();
   return (
-    <>
-      <div>
-        <Menu />
-        <Outlet />
-      </div>
-    </>
+    <div>
+      <Menu
+        bgColor={
+          yScroll > height ? 'bg-white/50 backdrop-blur-md' : 'bg-transparent'
+        }
+      />
+      <Outlet />
+    </div>
   );
 }
 

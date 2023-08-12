@@ -1,22 +1,19 @@
-import React, { useRef } from "react";
-import { useNavigate } from "react-router-dom";
-import { useScroll } from "react-use";
-import bgvideo from "../video/bgvideo.mp4";
-import Eximg from "../img/Eximg.jpg";
-import EximgTwo from "../img/Eximg2.jpg";
-import EximgThree from "../img/Eximg3.jpg";
-import EximgFour from "../img/Eximg4.jpg";
-import EximgFive from "../img/Eximg5.jpeg";
+import React, { useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useScroll } from 'react-use';
+import bgvideo from '../video/bgvideo.mp4';
+import Eximg from '../img/Eximg.jpg';
+import EximgTwo from '../img/Eximg2.jpg';
+import EximgThree from '../img/Eximg3.jpg';
+import EximgFour from '../img/Eximg4.jpg';
+import EximgFive from '../img/Eximg5.jpeg';
 
-const Home = () => {
+const Home = ({ yScroll }) => {
   const navigate = useNavigate();
-
-  const scrollRef = React.useRef(null);
-  const { x, y } = useScroll(scrollRef);
 
   return (
     <>
-      <main className="w-screen h-screen overflow-scroll" ref={scrollRef}>
+      <main className="w-screen">
         <div className="relative flex md:min-h-full h-screen  min-h-full pt-[165px] pr-0 pb-[80px] md:pt-[165px] md:pr-0 md:pb-[80px] items-center overflow-hidden ">
           <div className="absolute top-0 left-0 right-0 w-screen h-screen overflow-hidden">
             <video
@@ -39,7 +36,7 @@ const Home = () => {
                 медицинские изделия, материалы и продукцию,
                 <br />
                 способные помочь сохранить здоровье и улучшить качество жизней
-                людей.{" "}
+                людей.{' '}
               </p>
             </div>
           </div>
@@ -58,9 +55,9 @@ const Home = () => {
                 <div className=" mt-[1rem] tracking-tight text-left text-black text-[1.1rem]">
                   <p
                     className={`${
-                      y > 288
-                        ? "animate-fade-up animate-ease-linear  text-black"
-                        : "text-white"
+                      yScroll > 288
+                        ? 'animate-fade-up animate-ease-linear  text-black'
+                        : 'text-white'
                     } leading-snug mt-[1rem] mb-[1rem] tracking-tight text-left text-[0.9rem] lg:text-[1.1rem]`}
                   >
                     Компания НПК «Медпромлаб» была зарегистрирована в 2021 году,
@@ -71,13 +68,13 @@ const Home = () => {
                     "Об утверждении Плана мероприятий по импортозамещению в
                     медицинской промышленности Российской Федерации на период до
                     2024 года" решили создать компанию для разработки и
-                    производства медицинских изделий.{" "}
+                    производства медицинских изделий.{' '}
                   </p>
                   <p
                     className={`${
-                      y > 485
-                        ? "animate-fade-up animate-ease-linear"
-                        : "text-transparent"
+                      yScroll > 485
+                        ? 'animate-fade-up animate-ease-linear'
+                        : 'text-transparent'
                     } leading-snug mt-[1rem] tracking-tight text-left text-[0.9rem] lg:text-[1.1rem]`}
                   >
                     Для реализации данного проекта была привлечена команда
@@ -85,7 +82,7 @@ const Home = () => {
                     выбрало площадку для строительства
                     производственно-складского комплекса. Основными требованиями
                     к площадке было наличие готовой инфраструктуры, что
-                    позволило бы сократить сроки реализации проекта.{" "}
+                    позволило бы сократить сроки реализации проекта.{' '}
                   </p>
                 </div>
               </div>
@@ -102,9 +99,9 @@ const Home = () => {
                 <div className="leading-snug tracking-tight text-left text-black text-[0.9rem] lg:text-[1.1rem]">
                   <p
                     className={`${
-                      y > 750
-                        ? "animate-fade-up animate-ease-linear"
-                        : "text - transparent"
+                      yScroll > 750
+                        ? 'animate-fade-up animate-ease-linear'
+                        : 'text - transparent'
                     } mb-[1rem] `}
                   >
                     Благодаря поддержке Министерства инвестиций промышленности и
@@ -113,13 +110,13 @@ const Home = () => {
                     деятельности на территории особой экономической зоны ТВТ
                     «Дубна». В августе 2022 года НПК «Медпромлаб» получило
                     свидетельство, удостоверяющее регистрацию в качестве
-                    резидента особой экономической зоны.{" "}
+                    резидента особой экономической зоны.{' '}
                   </p>
                   <p
                     className={`${
-                      y > 920
-                        ? "animate-fade-up animate-ease-linear"
-                        : "text-transparent"
+                      yScroll > 920
+                        ? 'animate-fade-up animate-ease-linear'
+                        : 'text-transparent'
                     }`}
                   >
                     Это важный шаг, который позволил компании получить
@@ -127,7 +124,7 @@ const Home = () => {
                     2022 года был подписан договор аренды земельного участка на
                     территории экономической зоны, что позволило начать работы
                     по проектированию и строительству производственно-складского
-                    комплекса площадью 1440 кв.м.{" "}
+                    комплекса площадью 1440 кв.м.{' '}
                   </p>
                 </div>
               </div>
@@ -142,7 +139,7 @@ const Home = () => {
                     Проектом предполагается строительство современного
                     предприятия, состоящего из комплекса зданий общей площадью
                     более: 1 440 кв.м, в котором будут расположены
-                    производственные, складские, офисные помещения.{" "}
+                    производственные, складские, офисные помещения.{' '}
                   </p>
                   <p className={`mt-[1rem] mb-[1rem]`}>
                     На предприятии планируется производство медицинских изделий
@@ -152,7 +149,7 @@ const Home = () => {
                     предприятия свыше 100 человек. Основная задача проекта
                     заключается в реализации и поддержке государственной
                     политики, направленной на сохранения здоровья граждан
-                    Российской Федерации.{" "}
+                    Российской Федерации.{' '}
                   </p>
                 </div>
               </div>
@@ -168,7 +165,7 @@ const Home = () => {
                     людей.
                     <br />
                     Цели: Укрепление нашей репутации как надежного поставщика
-                    качественных медицинских изделий на территории СНГ.{" "}
+                    качественных медицинских изделий на территории СНГ.{' '}
                   </p>
                 </div>
               </div>
@@ -197,7 +194,7 @@ const Home = () => {
               <li className="w-[100%] lg:w-[50%] xl:w-[50%] 2xl:w-[50%] py-0 px-[15px] lg:p-[34px] xl:p-[34px] 2xl:p-[34px] hover:w-[">
                 <div
                   className=" cursor-pointer p-[40px] md:p-[70px] lg:pr-[56px] lg:pt-[60] lg:pl-[66px] lg:mb-[30px] xl:mb-[43px] 2xl:mb-[43px] mt-0 mr-auto mb-[40px] relative text-white h-[385px]"
-                  onClick={() => navigate("/implants")}
+                  onClick={() => navigate('/implants')}
                 >
                   <div className="absolute left-0 top-0 w-[100%] h-[100%] bg-no-repeat bg-center bg-cover visible">
                     <img
@@ -226,7 +223,7 @@ const Home = () => {
 
                 <div
                   className="cursor-pointer p-[40px] md:p-[70px] lg:pr-[56px] lg:pt-[60] lg:pl-[66px] lg:mb-[30px] xl:mb-[43px] 2xl:mb-[43px] mt-0 mr-auto mb-[40px] relative text-white h-[385px]"
-                  onClick={() => navigate("/fillingmaterial")}
+                  onClick={() => navigate('/fillingmaterial')}
                 >
                   <div className="absolute left-0 top-0 w-[100%] h-[100%] bg-no-repeat bg-center bg-cover visible">
                     <img
@@ -254,7 +251,7 @@ const Home = () => {
                 </div>
                 <div
                   className="cursor-pointer p-[40px] md:p-[70px] lg:pr-[56px] lg:pt-[60] lg:pl-[66px] lg:mb-[30px] xl:mb-[43px] 2xl:mb-[43px] mt-0 mr-auto mb-[40px] relative text-white h-[385px]"
-                  onClick={() => navigate("/dentalcare")}
+                  onClick={() => navigate('/dentalcare')}
                 >
                   <div className="absolute left-0 top-0 w-[100%] h-[100%] bg-no-repeat bg-center bg-cover visible">
                     <img
@@ -284,7 +281,7 @@ const Home = () => {
               <li className="w-[100%] lg:w-[50%] xl:w-[50%] 2xl:w-[50%] py-0 px-[15px] lg:p-[34px] xl:p-[34px] 2xl:p-[34px]">
                 <div
                   className="cursor-pointer p-[40px] md:p-[70px] lg:pt-[61px] lg:pr-[56px] lg:pl-[66px] lg:mb-[30px] xl:mb-[43px] 2xl:mb-[43px] mt-0 mr-auto mb-[40px] relative text-white h-[385px]"
-                  onClick={() => navigate("/surgicalinstruments")}
+                  onClick={() => navigate('/surgicalinstruments')}
                 >
                   <div className="absolute left-0 top-0 w-[100%] h-[100%] bg-no-repeat bg-center bg-cover visible">
                     <img
@@ -312,7 +309,7 @@ const Home = () => {
                 </div>
                 <div
                   className="cursor-pointer p-[40px] md:p-[70px] lg:pt-[61px] lg:pr-[56px] lg:pl-[66px] lg:mb-[30px] xl:mb-[43px] 2xl:mb-[43px] mt-0 mr-auto mb-[40px] relative text-white h-[385px]"
-                  onClick={() => navigate("/rehabilitation")}
+                  onClick={() => navigate('/rehabilitation')}
                 >
                   <div className="absolute left-0 top-0 w-[100%] h-[100%] bg-no-repeat bg-center bg-cover visible">
                     <img
@@ -340,7 +337,7 @@ const Home = () => {
                 </div>
                 <div
                   className="cursor-pointer p-[40px] md:p-[70px] lg:pt-[61px] lg:pr-[56px] lg:pl-[66px] lg:mb-[30px] xl:mb-[43px] 2xl:mb-[43px] mt-0 mr-auto mb-[40px] relative text-white h-[385px]"
-                  onClick={() => navigate("/diagnosticequipment")}
+                  onClick={() => navigate('/diagnosticequipment')}
                 >
                   <div className="absolute left-0 top-0 w-[100%] h-[100%] bg-no-repeat bg-center bg-cover visible">
                     <img
