@@ -5,6 +5,7 @@ module.exports = {
 
   content: [
     "./src/**/*.{html,js,jsx,ts,tsx}",
+    "./node_modules/flowbite-react/**/*.js",
   ],
   theme: {
     screens: {
@@ -30,7 +31,8 @@ module.exports = {
   }
 ,
 plugins: [
-  require('tailwindcss-animated')
+  require('tailwindcss-animated'),
+  require('flowbite/plugin')
 ],
 
   
