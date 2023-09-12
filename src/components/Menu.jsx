@@ -1,6 +1,6 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { TbAlignJustified } from "react-icons/tb";
+import { TbChevronDown, TbAlignJustified, TbChevronUp } from "react-icons/tb";
 
 import MedpromlabLogo from "../img/MedpromlabLogo_2.png";
 import Oezlogo from "../img/Oezlogo.png";
@@ -64,14 +64,14 @@ function Menu({
             onClick={handleClickAway}
           ></div>
           <div
-            className={`block h-screen ${margin}  pb-[100rem] md:w-[70%] w-[100%] lg:w-[60%] xl:w-[43%] fixed  bg-white  text-black pt-[1rem] z-8 ${
+            className={`block h-screen ${margin} overflow-scroll pb-[100rem] md:w-[70%] w-[100%] lg:w-[60%] xl:w-[43%] fixed  bg-white  text-black pt-[1rem] z-8 ${
               open
                 ? "animate-fade-right animate-once animate-duration-[1000ms] animate-delay-0 animate-ease-out animate-alternate animate-fill-both"
                 : "animate-fade-left"
             } animate-ease-out animate-duration-300`}
           >
-            <nav className="text-black text-left no-underline text-2xl font-light ">
-              <ul className="ml-[5.5rem] uppercase">
+            <nav className="text-black text-left no-underline md:text-lg lg:text-xl xl:text-xl font-[300] tracking-wide  ">
+              <ul className="ml-[2rem] md:ml-[3.5rem] lg:ml-[4.0rem] xl:ml-[5.5rem] uppercase">
                 <li>
                   <a
                     href="#!"
@@ -81,25 +81,54 @@ function Menu({
                     x
                   </a>
                 </li>
-                <li className="mt-[7rem] mb-[5rem]" onClick={handleClickAway}>
+                <li
+                  className="mt-[12rem] mb-[2rem] md:mb-[5rem] xl:mb-[3rem] "
+                  onClick={handleClickAway}
+                >
                   <Link to="/">Главная</Link>
                 </li>
                 <li className=" mb-[1rem]" onClick={handleClickAway}>
                   <Link to="/about">О компании</Link>
                 </li>
-                <li className=" mb-[1rem]" onClick={handleClickproduct}>
-                  <Link to="/products"> Продукция</Link>
+                <li className="mb-[1rem]" onClick={handleClickproduct}>
+                  <Link to="/products">
+                    {" "}
+                    <div className="flex items-center justify-between pr-[2rem] bg-gradient-to-b from-white to-slate-200 ">
+                      <div className=" ">Продукция</div>
+                      <div className="animate-pulse animate-infinite animate-duration-[3000ms] animate-delay-[2000ms] animate-ease-in">
+                        {!openProduct ? <TbChevronDown /> : <TbChevronUp />}
+                      </div>
+                    </div>
+                  </Link>
                 </li>
                 {openProduct ? (
-                  <ul>
+                  <ul className="">
                     <li className="mb-[1rem]" onClick={handleClickAway}>
-                      <Link to="/products/diagnosticequipment">Импланты</Link>
+                      <Link to="/products/productsfordentistry">
+                        Материалы и продукция для стоматологии
+                      </Link>
                     </li>
-                    <li className="mb-[1rem]">Импланты</li>
-                    <li className="mb-[1rem]">Импланты</li>
-                    <li className="mb-[1rem]">Импланты</li>
-                    <li className="mb-[1rem]">Импланты</li>
-                    <li className="mb-[1rem]">Импланты</li>
+                    <li className="mb-[1rem]" onClick={handleClickAway}>
+                      <Link to="/products/dentalcare">
+                        Средства гигиены полости рта
+                      </Link>
+                    </li>
+                    <li className="mb-[1rem]" onClick={handleClickAway}>
+                      <Link to="/products/dentalcare">
+                        Технические средства реабилитации (ТСР)
+                      </Link>
+                    </li>
+                    <li className="mb-[1rem]" onClick={handleClickAway}>
+                      <Link to="/products/dentalcare">Оборудование</Link>
+                    </li>
+                    <li className="mb-[1rem]" onClick={handleClickAway}>
+                      <Link to="/products/dentalcare">Оптический Материал</Link>
+                    </li>
+                    <li className="mb-[1rem]" onClick={handleClickAway}>
+                      <Link to="/products/dentalcare">
+                        Продукция компаний TERUMO и GORE EXCLUDER
+                      </Link>
+                    </li>
                   </ul>
                 ) : null}
                 <li className=" mb-[1rem]" onClick={handleClickAway}>
