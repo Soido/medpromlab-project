@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/medpromlab-project/static/css/main.01e4ee90.css",
-    "main.js": "/medpromlab-project/static/js/main.5588b901.js",
+    "main.js": "/medpromlab-project/static/js/main.42544865.js",
     "static/media/bgvideo7.mp4": "/medpromlab-project/static/media/bgvideo7.715b1758a0cafc98b409.mp4",
     "static/media/avatar.png": "/medpromlab-project/static/media/avatar.4cc1afd33963151bda9e.png",
     "static/media/bgvideo.mp4": "/medpromlab-project/static/media/bgvideo.ea57323488b95ae94dbf.mp4",
@@ -30,10 +30,10 @@
     "static/media/Oezlogo.png": "/medpromlab-project/static/media/Oezlogo.d53464f85fa4be5ad33e.png",
     "index.html": "/medpromlab-project/index.html",
     "main.01e4ee90.css.map": "/medpromlab-project/static/css/main.01e4ee90.css.map",
-    "main.5588b901.js.map": "/medpromlab-project/static/js/main.5588b901.js.map"
+    "main.42544865.js.map": "/medpromlab-project/static/js/main.42544865.js.map"
   },
   "entrypoints": [
     "static/css/main.01e4ee90.css",
-    "static/js/main.5588b901.js"
+    "static/js/main.42544865.js"
   ]
 }
