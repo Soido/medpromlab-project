@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/medpromlab-deployed/static/css/main.01e4ee90.css",
+    "main.js": "/medpromlab-deployed/static/js/main.596303ec.js",
+    "static/media/bgvideo7.mp4": "/medpromlab-deployed/static/media/bgvideo7.715b1758a0cafc98b409.mp4",
+    "static/media/avatar.png": "/medpromlab-deployed/static/media/avatar.4cc1afd33963151bda9e.png",
+    "static/media/bgvideo.mp4": "/medpromlab-deployed/static/media/bgvideo.ea57323488b95ae94dbf.mp4",
+    "static/media/TINAX D I S-1.png": "/medpromlab-deployed/static/media/TINAX D I S-1.bfb881c1beb053450b6c.png",
+    "static/media/TINAX BIONIC-1.png": "/medpromlab-deployed/static/media/TINAX BIONIC-1.ed8b5c0d013cab2cf594.png",
+    "static/media/SUPRAMAX SCETCH 2-1.png": "/medpromlab-deployed/static/media/SUPRAMAX SCETCH 2-1.8d6e70b9d695a24aff86.png",
+    "static/media/Img1.2.jpeg": "/medpromlab-deployed/static/media/Img1.2.f84b79f20689b5edca71.jpeg",
+    "static/media/Img1.3.jpeg": "/medpromlab-deployed/static/media/Img1.3.38b4362bd1705c80a9d3.jpeg",
+    "static/media/Img5.8.jpg": "/medpromlab-deployed/static/media/Img5.8.2b1b9c554f1b63d3cfea.jpg",
+    "static/media/Img5.9.jpg": "/medpromlab-deployed/static/media/Img5.9.1a47950328fe084f76a3.jpg",
+    "static/media/Img5.1.jpg": "/medpromlab-deployed/static/media/Img5.1.367fa7d7485c1e46f323.jpg",
+    "static/media/Img5.2.jpg": "/medpromlab-deployed/static/media/Img5.2.6ec7b92f6641d840a4c9.jpg",
+    "static/media/Img1.1.jpeg": "/medpromlab-deployed/static/media/Img1.1.e594ab4a2c09f9a71745.jpeg",
+    "static/media/MPL CHINA-1.png": "/medpromlab-deployed/static/media/MPL CHINA-1.ce24da936fb05f1f7271.png",
+    "static/media/Img5.4.jpg": "/medpromlab-deployed/static/media/Img5.4.eb9046ed6a42f81f7b2d.jpg",
+    "static/media/MedpromlabLogo_3.png": "/medpromlab-deployed/static/media/MedpromlabLogo_3.afff0ac4d4df1a8b7bf7.png",
+    "static/media/Img5.10.jpg": "/medpromlab-deployed/static/media/Img5.10.3d6e4d194717609ed033.jpg",
+    "static/media/Img5.3.jpg": "/medpromlab-deployed/static/media/Img5.3.499f66002b6fb0aa4f6c.jpg",
+    "static/media/Img5.6.jpg": "/medpromlab-deployed/static/media/Img5.6.b5c2a9304bb4ee4b545d.jpg",
+    "static/media/Img5.5.jpg": "/medpromlab-deployed/static/media/Img5.5.43605d7b6537d64f2978.jpg",
+    "static/media/Img5.7.jpg": "/medpromlab-deployed/static/media/Img5.7.8adbec6ceb1a69f6774c.jpg",
+    "static/media/10.jpg": "/medpromlab-deployed/static/media/10.86290c3d2a30da514b48.jpg",
+    "static/media/Gavrukov-avatr.png": "/medpromlab-deployed/static/media/Gavrukov-avatr.474468f7b2347416a3ee.png",
+    "static/media/MedpromlabLogo_krest-right.png": "/medpromlab-deployed/static/media/MedpromlabLogo_krest-right.ae3ca23977a6b09eb66e.png",
+    "static/media/MedpromlabLogo_krest-left.png": "/medpromlab-deployed/static/media/MedpromlabLogo_krest-left.de1c26ef55a059724669.png",
+    "static/media/Oezlogo.png": "/medpromlab-deployed/static/media/Oezlogo.d53464f85fa4be5ad33e.png",
+    "index.html": "/medpromlab-deployed/index.html",
+    "main.01e4ee90.css.map": "/medpromlab-deployed/static/css/main.01e4ee90.css.map",
+    "main.596303ec.js.map": "/medpromlab-deployed/static/js/main.596303ec.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01e4ee90.css",
+    "static/js/main.596303ec.js"
+  ]
+}
